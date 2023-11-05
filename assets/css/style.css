@@ -1,0 +1,346 @@
+body {
+    font-family: 'Baloo', sans-serif;
+    background-color: #000000;
+}
+
+section::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    overflow:scroll;
+}
+
+
+.navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+  
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(239, 83, 72);
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.buy-pattern{
+    background-image: url("/assets/images/okaypepe_party.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* 
+.bg-image {
+    //background-image: url("/assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+} 
+*/
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+    height: 90vh;
+    width: 100%;
+    object-fit:cover;
+}
+
+.site-logo {
+	display: inline-block;
+	padding: 0;
+	padding: 28px 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flow_banner {
+    overflow: hidden;
+    display: flex;
+    max-width: 1180px;
+    margin: 20px auto;
+    background-color: transparent;
+}
+
+.flow_banner .list {
+    display: flex; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.flow_banner .list > li {
+    margin-right: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    background-color: white; 
+    border-radius: 20px;
+}
+
+.flow_banner .list > li:hover {
+    margin-right: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    transition: all ease .5s 0s;
+    transform: rotate(10deg);
+}
+
+@keyframes flowRolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .flow_banner .list > li {font-size: 16px;}
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        background-color: #555;
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        padding: 10px;
+        margin-top: 40px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 20px;
+    }
+
+    .main-img {
+        align-items: center;
+    }
+
+    .main-text {
+        padding-top:120px;
+        padding-left: 50px;
+        padding-right: 50px;
+        align-items: center;
+        bottom: 0;
+        opacity: 0.8;
+    }
+
+    .buy-image {
+        margin-bottom: 30px;
+    }
+
+    .flow_banner .list > li {font-size: 14px;}
+}
+
+@media (max-width: 575.98px) {
+    .buy-image {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .buy-image {
+        margin-bottom: 30px;
+    }
+}
+
+.shadowCard {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.shadowCard:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.shadowCard:hover img {
+    width: 130px;
+    transition: all ease .5s 0s;
+    transform: rotate(15deg);
+}
+
+.img-y-rotation:hover {
+    transition: all ease 1s 0s;
+    transform: rotateY(360deg);
+}
+
+
+.progress {
+    height: 50px;
+}
+.progress-bar {
+    background-color:  rgb(239, 83, 72);;
+    height: 50px;
+}
+
+.main-button {
+    height: 50px;
+    border-radius: 3px;
+    border-width: 3px;
+    border-color: rgb(239, 83, 72);
+    color: white;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.main-button:hover {
+    height: 50px;
+    border-radius: 3px;
+    border-width: 4px;
+    background-color: rgb(239, 83, 72);
+    border-color: white;
+    color: white;
+    font-size: 22px;
+}
+
+.copy-button {
+    background-color: white; 
+    color: black; 
+    padding:10px; 
+    border-radius: 5px; 
+    margin-bottom: 30px; 
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.copy-button:focus {
+    background-color: white; 
+    border-color: rgb(239, 83, 72);;
+    color: black; 
+    padding:10px; 
+    border-radius: 5px; 
+    margin-bottom: 30px; 
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* Telegram Button Start*/ 
+.telegram-button{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    background-color: #0088cc;
+    border-radius: 3px;
+    padding: 10px 20px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.telegram-button:hover{
+    background-color: #007dbb;
+}
+
+.telegram-button:active{
+    background-color: #026698;
+}
+
+.telegram-button i{
+    display: inline-block;
+    height: 12px;
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 2px;
+    
+    background: url('https://telegram.org/img/oauth/tg_button_small.png') no-repeat;
+    background-size: contain;
+}
+
+.telegram-button span{
+    display: inline-block;
+    vertical-align: top;
+}
+/* Telegram Button End */ 
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+
+footer img:hover{
+    transition: all ease .5s 0s;
+    transform: rotate(10deg);
+}
+

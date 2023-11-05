@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OKAY PEPE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/pepe_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo&display=swap">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="height: 100px;" id="navbar">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/dngsquadmain.png" alt="" height="50" class="d-inline-block align-text-top ms-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#buy">HOW TO BUY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tokenomics">TOKENOMICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="position-relative container" style="height: 90vh;">
+                <div class="row p-0 m-0 h-100">
+                    <div class="col-lg-6 d-flex flex-column f align-self-center align-items-center main-text">
+                        <img src="assets/images/Dngsquad.png" width="60%" alt="" class="img-fluid" style="margin-left: 20px;">
+                        <div class="row" style="width: 50%;">
+                            <div class="col-lg-12">
+                                <button class="main-button w-100 mt-4" onclick="buyClicked()">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 main-img" style="align-self: flex-end;">
+                        <img src="assets/images/DNGMAIN.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <video class="bg-video" autoplay muted loop>
+                <source src="assets/video/main_background.mp4" type="video/mp4" />
+            </video>
+        </section>
+
+        <!-- Partners section -->
+        <section id="partners" style="padding-top: 100px; padding-bottom: 100px;">
+            <div class="container text-center">
+                <h1 class="text-white">PARTNERS</h1>
+                <div class="d-flex align-items-center">
+                    <div class="flow_banner">
+                        <ul class="list align-items-center">
+                            <li><a href="https://app.uniswap.org/swap" target="_blank" class="pb-1"><img src="assets/images/Uniswap.png" width="100" class="p-3 pb-1"></a>UNISWAP</li>
+                            <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0xe6a8a7316b4379e5ec9b453f0d3577ea3942695b" target="_blank" class="pb-1"><img src="assets/images/dextools.png" width="100" class="p-3 pb-1"></a>DEXTOOLS</li>
+                            <li><a href="https://etherscan.io/address/0xf9b7fa69e227e33f62556dda5c4662565fc5d048" target="_blank" class="pb-1"><img src="assets/images/etherscan.png" width="100" class="p-3 pb-1"></a>ETHERSCAN</li>
+                            <li><a href="https://coinmarketcap.com/" target="_blank" class="pb-1"><img src="assets/images/coinmarketcap.png" width="100" class="p-3 pb-1"></a>COINMARKETCAP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners section end -->
+
+        <!-- About section -->
+        <section id="about" style="padding-top: 100px; padding-bottom: 100px; background-color: rgb(24, 24, 24);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <img src="assets/images/ABOUT.jpg" alt="" width="100%" style="padding:20px; border-radius: 5%; border-top-left-radius: 30%; border-bottom-right-radius: 30%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-white" style="padding:40px;">
+                        <h1>About</h1>
+                        <p><aside>
+                            Listen up, DNG Squad: Dorks innovate, Nerds calculate, Geeks create. The world spins forward on the axis of your genius. So throw off the labels, embrace the power within, and show the world what DNG brilliance can truly achieve. They might see DNG as mere labels, but I see it as a badge of distinct honor, a unique blend of intellect and passion. Today, they call you Dork, Nerd, Geek; tomorrow, they'll call you Visionary, Trailblazer, Innovator. Remember, in the game of life, it's not about fitting in, it's about standing out and owning your prowess. Now, go conquer your world, DNG Phenoms
+                            </aside>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section end -->
+
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Story section end -->
+
+        <!-- How to buy section -->
+        <section id="buy" style="padding-top: 100px; padding-bottom: 100px; background-color: rgb(24, 24, 24);">
+            <h1 class="mb-4 text-center text-white">HOW TO BUY</h1>
+            <div class="container text-white position-relative buy-pattern">
+                
+                <div class="shadowCard row" style="margin-bottom: 30px;">
+                    <div class="col-lg-2 text-center buy-image">
+                        <img src="assets/images/MetaMask.png" :alt="" width="120" style="margin-right: 10px;">
+                    </div>
+                    <div class="col-lg-10 d-flex">
+                        <h4 class="align-self-center ms-3 me-3">STEP1. Create a Wallet<br><span class="h5">Download metamask or any other wallet of your choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io</span></h4>
+                    </div>
+                </div>
+                <div class="shadowCard row" style="margin-bottom: 30px;">
+                    <div class="col-lg-2 text-center buy-image">
+                        <img src="assets/images/ethereum.png" :alt="" width="120" style="margin-right: 10px;">
+                    </div>
+                    <div class="col-lg-10 d-flex">
+                        <h4 class="align-self-center ms-3 me-3">STEP2. Get Some ETH<br><span class="h5">Have ETH in your wallet to SWAP to $DNG. If you don't have any ETH, You can buy directly on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.</span></h4>
+                    </div>
+                </div>
+                <div class="shadowCard row">
+                    <div class="col-lg-2 text-center buy-image">
+                        <img src="assets/images/Uniswap.png" :alt="" width="120" style="margin-right: 10px;">
+                    </div>
+                    <div class="col-lg-10 d-flex">
+                        <h4 class="align-self-center ms-3 me-3">STEP3. Go to Uniswap<br><span class="h5">Connect to Uniswap. Copy & Paste $DNG Token Contract Address With $ETH Pair in Uniswap And Proceed For Swap With Wallet Signature.</span></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How to buy section end -->
+        
+        <!-- Tokenomics section -->
+        <section id="tokenomics" style="padding-top: 100px; padding-bottom: 100px;">
+            <div class="container text-white text-center">
+                <img src="assets/images/dngcoin.png" :alt="" width="120" style="margin-bottom: 20px;" class="img-y-rotation">
+                <h1 style="margin-bottom: 20px;">Tokenomics</h1>
+                <p>
+                </p>
+                <button id="contract_copy" class="copy-button" onclick="copyContractAddress()">Contract : 0xf9B7Fa69E227e33f62556dDA5C4662565fc5D048</button>
+                <h4 class="p-0 m-0 mt-3">Initial supply</h4>
+                <h1 class="p-0 m-0">1,000,000,000,000</h1>
+                <div class="border-bottom mt-3 mb-3"></div>
+                <div class="row">
+                    <div class="col-lg-4 mt-4">
+                        <h5>Stealth Launch</h5>
+                        <h5>800,000,000,000 (80%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <h5>Liquidity</h5>
+                        <h5>800,000,000,000 (80%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <h5>Cex</h5>
+                        <h5>1,000,000,000 (10%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4 mt-4">
+                        <h5>Burned</h5>
+                        <h5>	25,791,830,602.545580264077064174 (3%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 3%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <h5>Tax</h5>
+                        <h5>0 (0%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <h5>Team</h5>
+                        <h5>0 (0%)</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tokenomics section end -->
+
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer-section" id="contact" style="padding-top: 100px; background-color: rgb(24, 24, 24);">
+            <div class="container text-center" style="padding-bottom: 15px;">
+                <h1 class="text-white">Contact Us</h1>
+                <div class="mt-5">
+                    <a href="mailto:ADMIN@DNGSQUAD.SITE">
+                        <img src="assets/images/email.png" alt="E-mail">
+                    </a>
+                    <a href="https://t.me/dngerc20">
+                        <img src="assets/images/telegram.png" alt="Telegram">
+                    </a>
+                    <a href="https://twitter.com/dngerc20">
+                        <img src="assets/images/twitter.png" alt="Twitter">
+                    </a>
+                    <div class="copyright text-white" style="margin-top:100px">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made by DNG SQUAD
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
+    </main>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
